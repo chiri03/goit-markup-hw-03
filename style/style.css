@@ -13,101 +13,85 @@ body {
   box-sizing: border-box;
 }
 
-.top {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  top: 0px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.logo {
-  position: absolute;
-  width: 145px;
-  line-height: 31px;
-  left: 215px;
-  top: 12px;
-  bottom: 25px;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: rgba(0, 0, 0, 1);
-}
-
-.logo a {
-  color: rgba(33, 150, 243, 1);
-  text-decoration: none;
-}
-
-.logo-web {
-  color: rgba(0, 0, 0, 1);
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
 }
 
 ul {
   list-style-type: none;
 }
 
-.navigation-bar {
-  position: relative;
-  width: 58px;
-  height: 16px;
-  left: 400px;
-  top: 32px;
-  bottom: 32px;
-  right: 385px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-
-.navigation-bar ul {
+.page-header {
+  width: 1600px;
+  height: 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
 }
 
-.navigation-bar li a {
-  color: #212121;
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
   text-decoration: none;
+  color: rgba(33, 150, 243, 1);
+  padding: 24px 93px 25px 215px;
 }
 
-.nv-items {
-  margin-left: 50px;
+.logo-web {
+  color: rgba(0, 0, 0, 1);
 }
-.nv-items:hover,
-.nv-items:focus,
-.nv-items:active {
+
+.navigation-bar {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+}
+.main-nav-item {
+  display: inline-block;
+}
+
+.main-nav-link {
+  color: #212121;
+  text-decoration: none;
+  padding-left: 50px;
+  size: 14px;
+  line-height: 16px;
+  initial-letter-align: 2%;
+  font-weight: 500;
+}
+
+.main-nav-link:hover,
+.main-nav-link:focus,
+.main-nav-link:active {
   color: rgba(33, 150, 243, 1);
 }
 
-.contacts {
-  position: absolute;
-  height: 16px;
-  width: 500px;
-  left: 1096px;
-  top: 32px;
-  bottom: 32px;
-  right: 227px;
+.contact-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-right: 215px;
 }
 
-ul.contacts {
-  display: flex;
-}
-
-.contacts li {
+.contact-list-item {
   display: inline-block;
-  list-style-type: none;
+  text-decoration: none;
 }
 
-.contacts li a {
+.contact-section-value {
   color: #757575;
-  text-decoration: none;
-  padding: 40px;
+  padding-left: 50px;
 }
 
 .contact-section-value:hover,
@@ -155,10 +139,9 @@ ul.contacts {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  padding: 10px 19px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
   color: #ffffff;
@@ -176,32 +159,26 @@ ul.contacts {
 
 .skill-section {
   position: absolute;
-  width: 1170px;
-  height: 101px;
-  left: 215px;
   top: 774px;
+  border: 5px solid red;
+  margin: 0 215px;
 }
 
-ul.detail-skills {
-  display: flex;
+.detail-skills-list {
+  display: table-cell;
 }
 
 .skills {
-  width: 270px;
-  height: 16px;
-  left: 815px;
-  top: 774px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  padding-bottom: 10px;
 }
 
 .skills-description {
-  width: 270px;
-  height: 75px;
   left: 215px;
   top: 800px;
   font-size: 14px;
@@ -218,6 +195,7 @@ ul.detail-skills {
   height: 386px;
   left: 215px;
   top: 969px;
+  border: 5px solid red;
 }
 
 .workExemple {
@@ -242,7 +220,7 @@ ul.detail-skills {
 }
 
 .container li {
-  display: inline;
+  display: inline-block;
 }
 
 .box {
@@ -271,13 +249,13 @@ ul.detail-skills {
   height: 648px;
   top: 1449px;
   background: #f5f4fa;
+  display: inline;
+  border: 5px solid red;
 }
 
 .our-team {
   width: 1600px;
   height: 42px;
-  left: 718px;
-  top: 1543px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -291,11 +269,12 @@ ul.detail-skills {
   height: 368px;
   width: 260px;
   display: flex;
+  align-content: space-around;
 }
 
-.teamCris:first-child {
+/* .teamCris:first-child {
   margin-left: 215px;
-}
+} */
 
 .team {
   display: inline-block;
@@ -340,6 +319,7 @@ ul.detail-skills {
   left: 0px;
   top: 2097px;
   background: #2f303a;
+  border: 5px solid red;
 }
 
 .footer-logo {
@@ -373,7 +353,6 @@ ul.detail-skills {
 .nv-items-footer {
   font-size: 14px;
   line-height: 16px;
-  bottom: 60px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -396,7 +375,6 @@ ul.detail-skills {
   width: 516px;
   height: 38px;
   left: 614px;
-  top: 174px;
   padding: 6px 22px;
   top: 160px;
 }
@@ -410,6 +388,7 @@ ul.detail-skills {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+  margin-right: 8px;
 }
 
 .filter-name {
@@ -417,11 +396,9 @@ ul.detail-skills {
   font-size: 16px;
   line-height: 34px;
   text-align: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
 
+  letter-spacing: 0.03em;
   color: #212121;
-  margin: 4px;
   box-sizing: border-box;
 }
 

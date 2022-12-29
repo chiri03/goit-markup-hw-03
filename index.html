@@ -25,38 +25,39 @@
   </head>
   <body>
     <!-- header section -->
-    <header>
-      <div class="top">
-        <p class="logo">
-          <a class="head-logo" href="index.html"
-            >Web<span class="logo-web">Studio</span></a
-          >
-        </p>
-
-        <!-- Navigation to other pages -->
-        <nav class="navigation-bar">
-          <ul>
-            <li><a class="nv-items" href="index.html">Studio</a></li>
-            <li><a class="nv-items" href="portofolio.html">Portofolio</a></li>
-            <li><a class="nv-items" href="#contacte">Contacte</a></li>
-          </ul>
-        </nav>
-        <!-- contact section -->
-
-        <ul class="contacts">
-          <li>
-            <a class="contact-section-value" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+    <header class="page-header">
+      <a class="logo head-logo" href="index.html"
+        >Web<span class="logo-web">Studio</span></a
+      >
+      <!-- Navigation to other pages -->
+      <nav>
+        <ul class="navigation-bar main-nav-list">
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="index.html">Studio</a>
           </li>
-
-          <li>
-            <a class="contact-section-value" href="tel:+111111111111"
-              >+38096 111 11 11</a
-            >
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="portofolio.html">Portofolio</a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#contacte">Contacte</a>
           </li>
         </ul>
-      </div>
+      </nav>
+      <!-- contact section -->
+
+      <ul class="contact-list">
+        <li class="contact-list-item">
+          <a class="contact-section-value" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+
+        <li class="contact-list-item">
+          <a class="contact-section-value" href="tel:+111111111111"
+            >+38096 111 11 11</a
+          >
+        </li>
+      </ul>
     </header>
 
     <!-- main section -->
@@ -72,67 +73,79 @@
       </div>
 
       <!-- section skills -->
-      <section class="skill-section">
-        <ul class="detail-skills">
-          <li>
-            <h3 class="skills">Atenție la detalii</h3>
-            <p class="skills-description">
-              Considerații ideologice precum și începutul unor activități
-              zilnice privind formarea unei poziții.
-            </p>
-          </li>
-          <li>
-            <h3 class="skills">Punctualitate</h3>
-            <p class="skills-description">
-              Sarcina organizației, în special ce implică cadrul și locul de
-              formare a personalului.
-            </p>
-          </li>
+      <section>
+        <div class="skill-section">
+          <ul class="detail-skills">
+            <div class="detail-skills-list">
+              <li class="detail-skills-item-">
+                <h3 class="skills">Atenție la detalii</h3>
+                <p class="skills-description">
+                  Considerații ideologice precum și începutul unor activități
+                  zilnice privind formarea unei poziții.
+                </p>
+              </li>
+            </div>
+            <div class="detail-skills-list">
+              <li class="detail-skills-item">
+                <h3 class="skills">Punctualitate</h3>
+                <p class="skills-description">
+                  Sarcina organizației, în special ce implică cadrul și locul de
+                  formare a personalului.
+                </p>
+              </li>
+            </div>
+            <div class="detail-skills-list">
+              <li class="detail-skills-item">
+                <h3 class="skills">Planificare</h3>
+                <p class="skills-description">
+                  În mod similar, consultarea cu un activ larg este în mare
+                  parte condiționată.
+                </p>
+              </li>
+            </div>
 
-          <li>
-            <h3 class="skills">Planificare</h3>
-            <p class="skills-description">
-              În mod similar, consultarea cu un activ larg este în mare parte
-              condiționată.
-            </p>
-          </li>
-          <li>
-            <h3 class="skills">Tehnologii moderne</h3>
-            <p class="skills-description">
-              Importanța acestor probleme este atât de evidentă, la fel ca și
-              implementarea obiectivelor planificate.
-            </p>
-          </li>
-        </ul>
+            <div class="detail-skills-list">
+              <li class="detail-skills-item">
+                <h3 class="skills">Tehnologii moderne</h3>
+                <p class="skills-description">
+                  Importanța acestor probleme este atât de evidentă, la fel ca
+                  și implementarea obiectivelor planificate.
+                </p>
+              </li>
+            </div>
+          </ul>
+        </div>
       </section>
 
       <!-- section What we to do -->
-      <section class="work-section">
-        <h2 class="workExemple">What we do</h2>
-        <ul class="container">
-          <li class="box box1">
-            <img
-              src="./images/box1.jpg"
-              alt="Coding activities"
-              style="width: 370px; height: 294px"
-            />
-          </li>
-          <li class="box box2">
-            <img
-              src="./images/box2.jpg"
-              alt="choosing telephome frame"
-              style="width: 370px; height: 294px"
-            />
-          </li>
+      <section>
+        <div class="work-section">
+          <h2 class="workExemple">What we do</h2>
+          <ul class="container">
+            <li class="box box1">
+              <img
+                src="./images/box1.jpg"
+                alt="Coding activities"
+                style="width: 370px; height: 294px"
+              />
+            </li>
+            <li class="box box2">
+              <img
+                src="./images/box2.jpg"
+                alt="choosing telephome frame"
+                style="width: 370px; height: 294px"
+              />
+            </li>
 
-          <li class="box box3">
-            <img
-              src="./images/box3.jpg"
-              alt="work with colors"
-              style="width: 370px; height: 294px"
-            />
-          </li>
-        </ul>
+            <li class="box box3">
+              <img
+                src="./images/box3.jpg"
+                alt="work with colors"
+                style="width: 370px; height: 294px"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- our team section -->
