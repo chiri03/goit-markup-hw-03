@@ -25,6 +25,14 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  position: relative;
+  width: 1600px;
+  height: 2348px;
+
+  background: #ffffff;
+}
+
 .page-header {
   width: 1600px;
   height: 80px;
@@ -160,7 +168,6 @@ ul {
 .skill-section {
   position: absolute;
   top: 774px;
-  border: 5px solid red;
   margin: 0 215px;
 }
 
@@ -192,7 +199,6 @@ ul {
   position: absolute;
   left: 215px;
   top: 969px;
-  border: 5px solid red;
 }
 
 .workExemple {
@@ -206,11 +212,10 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
 }
 
-.container {
-  display: flex;
+.work-section-items {
+  padding-top: 90px;
 }
 
 .box {
@@ -237,36 +242,29 @@ ul {
   top: 1449px;
   background: #f5f4fa;
   display: inline;
-  border: 5px solid red;
 }
 
 .our-team {
-  width: 1600px;
-  height: 42px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 90px;
+  margin-bottom: 50px;
 }
 
 #totalTeam {
-  position: relative;
-  height: 368px;
-  width: 260px;
   display: flex;
-  align-content: space-around;
 }
 
-/* .teamCris:first-child {
+.teamCris:first-child {
   margin-left: 215px;
-} */
+}
 
 .team {
   display: inline-block;
-  height: 368px;
-  width: 260px;
   background-color: #ffffff;
   margin: 15px;
 }
@@ -275,6 +273,7 @@ ul {
   width: 260px;
   height: 260px;
   margin: 0;
+  justify-content: space-around;
 }
 
 .photo-container {
@@ -289,6 +288,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin: 30px auto 10px;
 }
 
 .photo-container-post {
@@ -297,6 +297,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 30px;
 }
 
 .subsol {
@@ -306,16 +307,12 @@ ul {
   left: 0px;
   top: 2097px;
   background: #2f303a;
-  border: 5px solid red;
 }
 
 .footer-logo {
-  position: relative;
-  width: 145px;
-  height: 31px;
+  position: absolute;
   left: 215px;
-  top: 25px;
-  margin-bottom: 14px;
+  top: 60px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -324,17 +321,8 @@ ul {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-
 .footer-logo-web {
   color: rgba(255, 255, 255, 1);
-}
-
-.footer-contacts {
-  position: absolute;
-  width: 231px;
-  height: 72px;
-  left: 175px;
-  margin-top: 14px;
 }
 
 .nv-items-footer {
@@ -355,6 +343,18 @@ ul {
   cursor: pointer;
 }
 
+.foot-logo-contacts {
+  width: 230px;
+  height: 75px;
+  margin-top: 120px;
+  margin-left: 215px;
+  display: flex;
+}
+
+.foot-logo-contacts-items {
+  display: block;
+  justify-content: space-around;
+}
 .filters {
   position: absolute;
   display: flex;
