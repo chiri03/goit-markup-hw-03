@@ -347,14 +347,8 @@ ul {
 .foot-logo-contacts {
   padding-top: 120px;
   padding-left: 215px;
-  display: flex;
-  align-items: space-between;
 }
 
-.foot-logo-contacts-items {
-  display: block;
-  justify-content: space-around;
-}
 .filters {
   position: absolute;
   display: inline-block;
