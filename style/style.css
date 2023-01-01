@@ -19,6 +19,7 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0;
+  /* outline: 5px solid limegreen !important; */
 }
 
 ul {
@@ -29,7 +30,7 @@ ul {
   position: relative;
   width: 1600px;
   height: 2348px;
-
+  margin: auto;
   background: #ffffff;
 }
 
@@ -344,11 +345,10 @@ ul {
 }
 
 .foot-logo-contacts {
-  width: 230px;
-  height: 75px;
-  margin-top: 120px;
-  margin-left: 215px;
+  padding-top: 120px;
+  padding-left: 215px;
   display: flex;
+  align-items: space-between;
 }
 
 .foot-logo-contacts-items {
@@ -357,10 +357,8 @@ ul {
 }
 .filters {
   position: absolute;
-  display: flex;
+  display: inline-block;
   clear: both;
-  width: 516px;
-  height: 38px;
   left: 614px;
   padding: 6px 22px;
   top: 160px;
