@@ -258,10 +258,6 @@ ul {
 
 #totalTeam {
   display: flex;
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
 }
 
 .teamCris:first-child {
