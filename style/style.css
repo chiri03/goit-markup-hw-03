@@ -165,15 +165,13 @@ ul {
 }
 
 /* section skills */
-
+.detail-skills {
+  display: flex;
+}
 .skill-section {
   position: absolute;
   top: 774px;
   margin: 0 215px;
-}
-
-.detail-skills-list {
-  display: table-cell;
 }
 
 .skills {
