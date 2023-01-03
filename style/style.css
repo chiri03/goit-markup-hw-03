@@ -330,28 +330,17 @@ ul {
 }
 
 .container-img {
-  display: flex;
-  margin: auto;
   flex-wrap: wrap;
 }
 
 .container-img-file {
   width: 370px;
   height: 404px;
-  left: 215px;
-  top: 262px;
   background: var(--white);
   border: 1px solid #eeeeee;
   text-align: center;
   display: inline-flex;
-  margin: 0 20px 40px 20px;
-}
-
-.image {
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 262px;
+  margin: 0 10px 40px 10px;
 }
 
 .container-img-file-head {
