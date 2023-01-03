@@ -4,8 +4,6 @@ body {
   padding: 0;
   top: 0;
   position: relative;
-  width: 1600px;
-  height: 2348px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -29,7 +27,6 @@ ul {
 .container {
   position: relative;
   width: 1600px;
-  height: 2348px;
   margin: auto;
   background: #ffffff;
 }
